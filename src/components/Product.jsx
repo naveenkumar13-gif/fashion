@@ -34,7 +34,7 @@ const data=[{
 
 const Product = () => {
     return (
-        <div className='p-12 max-xl:p-8 max-md:p-4  bg-[#E6C744]'>
+        <div className='p-12 max-xl:p-8 max-md:p-4  bg-[#E6C744]' id='Product'>
             <h1 className='font-bold text-5xl max-md:text-center mb-8  '>New Traend</h1>
             <ul className='flex justify-between items-center gap-10 max-md:flex-wrap max-lg:gap-7 '>
                 {data.map((item,index)=>(
