@@ -6,6 +6,7 @@ import Company from './components/Company'
 import Product from './components/Product'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import Sale from './components/Sale';
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
       <Header/>
       <Company/>
       <Product/>
+      <Sale/>
     </div>
   );
 }

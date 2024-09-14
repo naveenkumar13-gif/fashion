@@ -34,17 +34,18 @@ const data=[{
 
 const Product = () => {
     return (
-        <div className='p-12 max-xl:p-8 max-md:p-4  bg-[#E6C744]' id='Product'>
-            <h1 className='font-bold text-5xl max-md:text-center mb-8  '>New Traend</h1>
+        <div className='p-12 max-xl:p-8 max-md:p-4 bg-[#e3e6f1]  ' id='Product'>
+            <h1 className='font-bold text-5xl max-md:text-center mb-8'  data-aos='fade-right' data-aos-duration={1000}   data-aos-delay={500}>New Traend</h1>
             <ul className='flex justify-between items-center gap-10 max-md:flex-wrap max-lg:gap-7 '>
                 {data.map((item,index)=>(
-                    <div className='w-full' >
+                    <div className='w-full'  key={index} >
                         <div className='w-[100%] max-md:w-1/2 max-md:m-auto  ' >
                         <img src={item.image} alt='person' className='w-full h-full '  data-aos="zoom-in"  data-aos-delay={index * 100} />
                         </div>
                         <div className='flex flex-col gap-2 mt-4 max-md:w-1/2 max-md:m-auto max-md:mt-5  '>
-                        <h2 className=' text-2xl max-xl:text-xl max-lg:text-[1rem]  font-semibold'>{item.Name}</h2>
-                        <p  className='text-[#0C1D31]'>{item.Explore}</p>
+                        <h2 className=' text-2xl max-xl:text-xl max-lg:text-[1rem]  font-semibold max-sm:text-sm'>{item.Name}</h2>
+                        <p  className='text-[#0C1D31] max-sm:text-sm'>{item.Explore}</p>
+                        
                         </div>
                     </div>
                 ))}
