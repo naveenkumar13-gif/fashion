@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+// import TodoList from './Todo/ToDo';
 import Header from './components/Header'
 import NavBar from '../src/components/NavBar'
 import Company from './components/Company'
@@ -7,6 +8,7 @@ import Product from './components/Product'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import Sale from './components/Sale';
+import Favourite from './components/Favourite';
 
 function App() {
   useEffect(() => {
@@ -24,6 +26,8 @@ function App() {
       <Company/>
       <Product/>
       <Sale/>
+     <Favourite/>
+      {/* <TodoList/> */}
     </div>
   );
 }

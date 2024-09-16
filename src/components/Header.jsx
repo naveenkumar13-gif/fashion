@@ -10,10 +10,10 @@ export default function Header() {
 
                 <h1 className='text-[4rem] font-extrabold leading-normal max-lg:text-[3rem] max-md:text-center  '  >
 
-                    <p className='bg-white w-[60%] pl-4 max-md:text-[2.5rem] max-sm:w-[50%] max-md:w-[50%] max-md:m-auto max-sm:m-auto'  data-aos='fade-right'  data-aos-duration={1200} data-aos-delay={1000} >LET’S</p>
+                    <p className='bg-white w-[60%] pl-4 max-md:text-[2.5rem] max-sm:w-[80%] max-md:w-[50%]  max-md:m-auto max-sm:m-auto'  data-aos='fade-right'  data-aos-duration={1200} data-aos-delay={1000} >LET’S</p>
                     <p className='max-md:text-[2.5rem] max-md:w-[100%] ' data-aos='fade-right'  data-aos-duration={1400} data-aos-delay={1200}>EXPLORE</p>
-                    <p className='bg-[#E6C744] w-[60%]  pl-4 max-md:text-[2.5rem] max-sm:w-[60%] max-md:w-[50%] max-md:m-auto max-sm:m-auto' data-aos='fade-right'  data-aos-duration={1600} data-aos-delay={1400}>UNIQUE </p>
-                    <p className='max-md:text-[2.5rem] max-md:w-[100%] ' data-aos='fade-right'  data-aos-duration={1800} data-aos-delay={1600}>CLOTHES.</p>
+                    <p className='bg-[#E6C744] w-[60%]  pl-4 max-md:text-[2.5rem] max-sm:w-[80%] max-md:w-[50%] max-md:m-auto max-sm:m-auto' data-aos='fade-right'  data-aos-duration={1600} data-aos-delay={1400}>UNIQUE </p>
+                    <p className='max-md:text-[2.5rem] max-md:w-[100%]  ' data-aos='fade-right'  data-aos-duration={1800} data-aos-delay={1600}>CLOTHES.</p>
                     
                     </h1>
                       <p className='text-2xl pb-4 max-lg:text-[1rem] max-lg:leading-[1.6]  max-md:text-center ' data-aos='zoom-out' data-aos-delay={500}>Live for Influential and Innovative fashion!</p>

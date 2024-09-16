@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
 
 const TodoList = () => {
-  const [inputValue, setInputValue] = useState('');
+  const [input, setInput] = useState('');
   const [items, setItems] = useState([]);
 
   const handleSubmit = (e) => {
-    if(!inputValue)return
+    if(!input)return
     e.preventDefault();
-    setItems([...items, inputValue]);
-      setInputValue('');
+    setItems([...items, {task:input,done:false}]);
+      setInput('');
     
   };
+
+const upDateToDo=(index)=>{
+  const upDate=items.map((item,i)=>i===index ? {...items,done:!item.done}:item)
+  setItems(upDate)
+}
 
   const removeItem = (id) => {
     const newItems = items.filter((_, i) => i !== id);
@@ -24,28 +29,34 @@ const TodoList = () => {
         <form className='flex gap-3 m-6 justify-center items-center' onSubmit={handleSubmit}>
           <input
             type="text"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
             placeholder="Enter your task..."
             className="bg-[#fff] p-[1rem] w-[20rem] outline-none "
           />
           {/* <button className='bg-black p-4 text-white' type='submit'>Add Item</button> */}
-        { (inputValue && items) ? <Button>Add Item</Button> :null}
+        {  <Button>Add Item</Button> }
         </form>
         <div >
-          <ul>
-            {items.map((item, index) => 
-              <li key={index} className='flex items-center justify-between mt-4 border-b-2 w-1/2 m-auto'>
-                {item}
+        <ul>
+            {items.map((item, index) => (
+              <li
+                key={index}
+                className={`flex items-center justify-between mt-4 border-b-2 w-1/2 m-auto ${item.done ? 'line-through text-gray-800' : ''}`}
+              >
+                <span  className="cursor-pointer" onClick={() => upDateToDo(index)} >
+                
+                  {item.task}
+                </span>
                 <button
                   className='ml-2 bg-red-500 text-white p-1 rounded mb-4'
                   onClick={() => removeItem(index)}
                 >
                   Delete
                 </button>
-                {/* <Button  onClick={() => removeItem(index)}>Delete</Button> */}
+                
               </li>
-            )}
+            ))}
           </ul>
         </div>
       </div>

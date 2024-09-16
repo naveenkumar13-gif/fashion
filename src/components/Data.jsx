@@ -4,15 +4,15 @@ import Person3 from "../Assets/person-3.png"
 
 
 const Data=()=>[{
-    Image:{Person1},
+    Image:Person1,
     Name:'Hoodies & Sweetshirt',
     Explore:'Explore Now!'
 },{
-    Image:{Person2},
+    Image:Person2,
     Name:'Hoodies & Sweetshirt',
     Explore:'Explore Now!'
 },{
-    Image:{Person3},
+    Image:Person3,
     Name:'Hoodies & Sweetshirt',
     Explore:'Explore Now!'
 }
