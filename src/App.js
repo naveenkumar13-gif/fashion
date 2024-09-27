@@ -3,12 +3,15 @@ import React, { useEffect } from 'react';
 // import TodoList from './Todo/ToDo';
 import Header from './components/Header'
 import NavBar from '../src/components/NavBar'
-import Company from './components/Company'
+import Company from './components/Company';
 import Product from './components/Product'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import Sale from './components/Sale';
 import Favourite from './components/Favourite';
+import Download from './components/Download';
+import Contact from './components/Contact'
+
 
 function App() {
   useEffect(() => {
@@ -21,15 +24,22 @@ function App() {
 
   return (
     <div className="App"  >
-      <NavBar />
+    
+     <NavBar />
       <Header/>
       <Company/>
       <Product/>
       <Sale/>
      <Favourite/>
+     <Download/>
+     <Contact/>
       {/* <TodoList/> */}
     </div>
   );
 }
+
+
+
+
 
 export default App;
