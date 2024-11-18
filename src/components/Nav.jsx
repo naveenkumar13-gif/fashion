@@ -1,6 +1,6 @@
-import React, { Suspense, useState } from 'react'
-// const listStyle= "active==='CATALOGUE' ? 'bg-[#000] text-white  px-4 py-2 rounded-md transition-all duration-700 ' :' hover:bg-[#000] hover:text-white  px-4 py-2 rounded-md transition-all duration-700'"
-const listStyle= "active==='CATALOGUE' ?  hover:bg-[#000] hover:text-white  px-4 py-2 rounded-md transition-all duration-700': '' "
+import React, { useState } from 'react'
+const listStyle= "active ==='CATALOGUE' ? 'bg-[#000] text-white  px-4 py-2 rounded-md transition-all duration-700 ' :' hover:bg-[#000] hover:text-white  px-4 py-2 rounded-md transition-all duration-700'"
+// const listStyle= "active==='CATALOGUE' ?  hover:bg-[#000] hover:text-white  px-4 py-2 rounded-md transition-all duration-700': '' "
 export default function NavBar() {
   const [active,setActive]=useState('')
   const[Open,SetOpen]=useState(false)
@@ -20,10 +20,10 @@ export default function NavBar() {
   
    <ul className='flex  gap-6 items-center  font-semibold   max-lg:gap-2   max-lg:text-sm   max-md:hidden'  >
     <li className={active=== 'CATALOGUE'} >
-      <a href="#"  onClick={()=>setActive('CATALOGUE')} className={listStyle}>CATALOGUE</a>
+      <a href="#"  onClick={()=>setActive('CATALOGUE')} >CATALOGUE</a>
       </li>
       <li>
-      <a href="#Product"   onClick={()=>setActive('FASHION')} className={listStyle}> FASHION</a>
+      <a href="#Product"   onClick={()=>setActive('FASHION')} > FASHION</a>
       </li>
     <li  className={listStyle}>
       <a href="#"  onClick={()=>setActive('FAVOURITE')}>FAVOURITE</a>

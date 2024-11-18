@@ -36,7 +36,7 @@ function Company() {
       </div> */}
 <ul className='flex justify-evenly items-center  flex-wrap gap-4 py-10 'data-aos='zoom-out' data-aos-duration={1000}  data-aos-delay={200}  >
   {Comapny.map((logo)=>(
-    <li  key={logo.image}>
+    <li  key={logo.image} >
       <img src={logo.image} alt={logo.image}/>
     
     </li>

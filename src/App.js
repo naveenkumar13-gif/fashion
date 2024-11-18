@@ -11,6 +11,7 @@ import Sale from './components/Sale';
 import Favourite from './components/Favourite';
 import Download from './components/Download';
 import Contact from './components/Contact'
+import Search from './components/Search'
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Sale/>
      <Favourite/>
      <Download/>
+     <Search/>
      <Contact/>
       {/* <TodoList/> */}
     </div>
