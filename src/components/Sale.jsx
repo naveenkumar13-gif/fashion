@@ -2,7 +2,7 @@ import React from 'react';
 import Image from '../Assets/Sale.png'
 const Sale = () => {
     return (
-        <div className='flex  gap-10 bg-[#EDCE49]  items-center max-md:flex-col max-md:py-6 max-md:gap-6 max-sm:gap-4'>
+        <div className='flex  gap-10 bg-[#EDCE49]  items-center max-md:flex-col max-md:py-6 max-md:gap-6 max-sm:gap-4' id='sale'>
            <SaleImg/>
            <SaleContent/>
         </div>

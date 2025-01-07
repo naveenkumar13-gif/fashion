@@ -78,7 +78,7 @@ function NavLink(){
       <a href="#Product"   onClick={()=>setActive('FASHION')} className={listStyle}> FASHION</a>
       </li>
     <li  className={listStyle}>
-      <a href="#"  onClick={()=>setActive('FAVOURITE')}>FAVOURITE</a>
+      <a href="#sale"  onClick={()=>setActive('FAVOURITE')}>FAVOURITE</a>
       </li>
     <li  className={listStyle}>
       <a href="#"   onClick={()=>setActive('LIFESTYLE')}> LIFESTYLE</a>
